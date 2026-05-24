@@ -1,66 +1,66 @@
 # 🛒 Projeto Lista de Compras
 
-<p align="center">
-  <img src="https://img.shields.io/github/repo-size/GlawberSantos/Projeto_Lista_de_Compras?style=for-the-badge" alt="Repo Size">
-  <img src="https://img.shields.io/github/languages/top/GlawberSantos/Projeto_Lista_de_Compras?style=for-the-badge" alt="Top Language">
-  <img src="https://img.shields.io/github/last-commit/GlawberSantos/Projeto_Lista_de_Compras?style=for-the-badge" alt="Last Commit">
-</p>
+[![Repo Size](https://img.shields.io/github/repo-size/GlawberSantos/Projeto_Lista_de_Compras?style=for-the-badge)](https://github.com/GlawberSantos/Projeto_Lista_de_Compras)
+[![Top Language](https://img.shields.io/github/languages/top/GlawberSantos/Projeto_Lista_de_Compras?style=for-the-badge)](https://github.com/GlawberSantos/Projeto_Lista_de_Compras)
+[![Last Commit](https://img.shields.io/github/last-commit/GlawberSantos/Projeto_Lista_de_Compras?style=for-the-badge)](https://github.com/GlawberSantos/Projeto_Lista_de_Compras)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](https://github.com/GlawberSantos/Projeto_Lista_de_Compras)
 
-<p align="center">
-  <a href="#-sobre-o-projeto">Sobre</a> •
-  <a href="#-funcionalidades">Funcionalidades</a> •
-  <a href="#-tecnologias-utilizadas">Tecnologias</a> •
-  <a href="#-como-executar">Como Executar</a> •
-  <a href="#-autor">Autor</a>
-</p>
+[Sobre](#-sobre-o-projeto) • [Funcionalidades](#-funcionalidades) • [Demo](#-demo) • [Tecnologias](#-tecnologias-utilizadas) • [Como Executar](#-como-executar) • [Autor](#-autor)
 
 ---
 
 ## 💻 Sobre o Projeto
 
-O **Projeto Lista de Compras** é uma aplicação prática desenvolvida para facilitar a organização do dia a dia, permitindo que o usuário gerencie seus itens de mercado de forma rápida e intuitiva. 
+O **Projeto Lista de Compras** é uma aplicação web prática desenvolvida para facilitar a organização do dia a dia, permitindo que o usuário gerencie seus itens de mercado de forma rápida e intuitiva.
 
 Este projeto foi construído com o objetivo de consolidar conceitos de manipulação de estados, estruturação de dados e criação de interfaces dinâmicas e responsivas.
 
-> 💡 **Dica:** Adicione aqui o link do projeto publicado (se houver, como GitHub Pages ou Vercel).
+---
+
+## 🌐 Demo
+
+Acesse o projeto online: **[glawbersantos.github.io/Projeto_Lista_de_Compras](https://glawbersantos.github.io/Projeto_Lista_de_Compras/)**
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] **Adicionar itens:** Permite inserir novos produtos especificando o nome (e quantidade/valor, se aplicável).
-- [x] **Marcar como concluído:** Opção de riscar ou marcar os itens já colocados no carrinho.
-- [x] **Remover itens:** Exclusão individual de produtos da lista.
-- [x] **Persistência de dados:** Os itens não somem ao atualizar a página (salvos localmente).
-- [x] **Interface Responsiva:** Adaptada para uso em computadores e celulares.
+- [x] **Adicionar itens** — Insira novos produtos com nome e quantidade
+- [x] **Marcar como concluído** — Risque os itens já colocados no carrinho
+- [x] **Remover itens** — Exclusão individual de produtos da lista
+- [x] **Persistência de dados** — Itens salvos localmente (não somem ao atualizar)
+- [x] **Interface Responsiva** — Adaptada para desktop e mobile
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
-
-- **HTML5** / **CSS3**
-- **JavaScript (ES6+)** / **React**
-- **Git & GitHub** (Controle de versão)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
 ## 📦 Como Executar o Projeto
 
-Para clonar e executar esta aplicação em sua máquina local, você precisará do [Git](https://git-scm.com) instalado.
-
-### 🔧 Passos para execução:
-
 ```bash
-# 1. Clone este repositório
-$ git clone [https://github.com/GlawberSantos/Projeto_Lista_de_Compras.git](https://github.com/GlawberSantos/Projeto_Lista_de_Compras.git)
+# Clone este repositório
+git clone https://github.com/GlawberSantos/Projeto_Lista_de_Compras.git
 
-# 2. Acesse a pasta do projeto
-$ cd Projeto_Lista_de_Compras
+# Acesse a pasta do projeto
+cd Projeto_Lista_de_Compras
 
-# 3. Abra o projeto
-# Se for um projeto web simples, basta abrir o arquivo index.html no navegador.
-# Se for React/Node, execute:
-$ npm install
-$ npm start
+# Abra o index.html no navegador
+# Ou use a extensão Live Server no VS Code
+```
+
+---
+
+## 👨‍💻 Autor
+
+Feito por **Glawber Santos**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/glauber-santos-346957309)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GlawberSantos)
