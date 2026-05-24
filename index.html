@@ -5,54 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Lista de Compras — Feira do mês</title>
 </head>
 <body>
+    <div class="fundo-decorativo" aria-hidden="true"></div>
+
     <div id="corpo">
-        <div class="logo">
-            <img src="./assets/Vector.png" alt="">
-            <h1>quicklist</h1>
-        </div>
-        <div class="page">
-            <h2>Compras da semana</h2>
-        </div>
-        <div class="item">
-            <div class="input">
-                <input type="text" id="novo-item" placeholder="Digite o nome do item">
-                <button id="adicionar-item">Adicionar item</button>
+        <header class="cabecalho">
+            <div class="marca">
+                <span class="marca-icone" aria-hidden="true">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 4V2M17 4V2M3 8H21M5 8L6.2 18.1C6.4 19.7 7.7 21 9.3 21H14.7C16.3 21 17.6 19.7 17.8 18.1L19 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 12H15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <div>
+                    <h1>Lista de Compras</h1>
+                    <p class="marca-subtitulo">Sua feira do mês, organizada</p>
+                </div>
             </div>
-        </div>
-        <ul id="lista-itens">
-            <li>
-                <img src="./assets/checkbox.png" alt="checkbox" class="checkbox">
-                <span>Pão de forma</span>
-                <img src="./assets/icon delete.png" alt="lixeira" class="delete-icon">
-            </li>
-            <li>
-                <img src="./assets/checkbox.png" alt="checkbox" class="checkbox">
-                <span>Café preto</span>
-                <img src="./assets/icon delete.png" alt="lixeira" class="delete-icon">
-            </li>
-            <li>
-                <img src="./assets/checkbox.png" alt="checkbox" class="checkbox">
-                <span>Suco de laranja</span>
-                <img src="./assets/icon delete.png" alt="lixeira" class="delete-icon">
-            </li>
-            <li>
-                <img src="./assets/checkbox.png" alt="checkbox" class="checkbox">
-                <span>Bolacha</span>
-                <img src="./assets/icon delete.png" alt="lixeira" class="delete-icon">
-            </li>
-        </ul>
-        <div id="alerts" style="display: none;">
-            <img src="./assets/alerts.png" alt="alerts" class="alerts">
-            <h3>O item foi removido da lista</h3>
-        </div>
+        </header>
+
+        <main class="conteudo">
+            <section class="painel">
+                <div class="painel-topo">
+                    <div>
+                        <h2>Feira do mês</h2>
+                        <p class="painel-descricao">Monte a lista antes de ir ao mercado e marque o que já colocou no carrinho.</p>
+                    </div>
+                    <div class="progresso" id="progresso" aria-live="polite">
+                        <span class="progresso-numero" id="progresso-numero">0/0</span>
+                        <span class="progresso-texto">no carrinho</span>
+                    </div>
+                </div>
+
+                <div class="barra-progresso" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="barra-progresso">
+                    <div class="barra-progresso-preenchimento" id="barra-preenchimento"></div>
+                </div>
+
+                <form id="form-item" class="formulario" autocomplete="off">
+                    <label class="campo-label" for="novo-item">Novo produto</label>
+                    <div class="campo-linha">
+                        <input type="text" id="novo-item" placeholder="Ex: arroz 5kg, frango, sabão em pó..." aria-label="Nome do produto">
+                        <button type="submit" id="adicionar-item">
+                            <span>Adicionar</span>
+                        </button>
+                    </div>
+                </form>
+
+                <ul id="lista-itens" class="lista" aria-live="polite"></ul>
+
+                <p id="lista-vazia" class="lista-vazia" hidden>
+                    <span class="lista-vazia-icone" aria-hidden="true">🛒</span>
+                    Sua lista está vazia. Comece pelos itens que não podem faltar na feira do mês.
+                </p>
+
+                <div id="alerts" class="alerta" role="status" aria-live="polite" hidden>
+                    <span class="alerta-icone" aria-hidden="true">✓</span>
+                    <p>Item removido da lista</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Dica: planeje grãos, limpeza e hortifrúti — assim você não esquece nada na feira.</p>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
